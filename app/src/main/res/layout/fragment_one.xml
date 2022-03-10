@@ -38,27 +38,26 @@
         <com.airbnb.lottie.LottieAnimationView
             android:layout_width="match_parent"
             android:layout_height="150dp"
-            app:lottie_rawRes="@raw/amination1"
             app:lottie_autoPlay="true"
-            app:lottie_loop="true"/>
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/amination1" />
 
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/phraseField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="40dp"
-            android:layout_marginLeft="40dp"
             android:fontFamily="@font/imprima"
             android:hint="Phrase">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                />
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -66,18 +65,17 @@
             android:id="@+id/keyField"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="15dp"
+            android:layout_marginRight="40dp"
             android:fontFamily="@font/imprima"
             android:hint="Key">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:backgroundTint="@color/white"
-                android:textColor="@color/black"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                />
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -86,68 +84,68 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/imprima"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="40dp"
-            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/imprima"
             android:hint="Language">
 
             <AutoCompleteTextView
-                android:backgroundTint="@color/white"
                 android:id="@+id/dropdown_menu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
                 android:enabled="false"
-                android:textColor="@color/black"
-                android:inputType="none"/>
+                android:inputType="none"
+                android:textColor="@color/black" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
 
         <Button
             android:id="@+id/encryptBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="15dp"
             android:layout_marginRight="40dp"
-            android:layout_marginLeft="40dp"
-            android:text="Encrypt"
             android:backgroundTint="@color/white"
-            style="@style/Widget.MaterialComponents.Button.TextButton" />
+            android:text="Encrypt" />
 
         <Button
             android:id="@+id/decryptBtn"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="40dp"
-            android:layout_marginLeft="40dp"
-            android:text="Decrypt"
             android:backgroundTint="@color/white"
-            style="@style/Widget.MaterialComponents.Button.TextButton" />
+            android:text="Decrypt" />
 
         <TextView
             android:id="@+id/textView_res"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/imprima"
+            android:gravity="center_horizontal"
             android:text="Result"
             android:textColor="@color/white"
-            android:textSize="20sp"
-            android:layout_marginTop="20dp"
-            android:gravity="center_horizontal"
-            android:fontFamily="@font/imprima"/>
+            android:textSize="20sp" />
 
-<!--        <TextView-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Firstly you should write an algorithm to move the red circle on the game board"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:fontFamily="@font/imprima"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textSize="16sp"-->
-<!--            android:layout_marginRight="16dp"-->
-<!--            android:layout_marginLeft="8dp"-->
-<!--            android:gravity="center_horizontal" />-->
+        <!--        <TextView-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Firstly you should write an algorithm to move the red circle on the game board"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:fontFamily="@font/imprima"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="16sp"-->
+        <!--            android:layout_marginRight="16dp"-->
+        <!--            android:layout_marginLeft="8dp"-->
+        <!--            android:gravity="center_horizontal" />-->
     </LinearLayout>
 
     <LinearLayout
